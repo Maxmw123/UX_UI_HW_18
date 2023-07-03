@@ -1,0 +1,139 @@
+/* Navbar CSS */
+.inline-block {
+  display: inline-block;
+  vertical-align: top;
+}
+
+.logo {
+  width: 23%;
+  padding: 1%;
+}
+
+nav {
+  width: 73%;
+  padding: 1%;
+}
+
+nav ul {
+  width: 50%;
+  margin-left: auto;
+}
+
+.logo img {
+  text-align: center;
+}
+
+/* Hero Image CSS */
+.heroImg {
+  height: 600px;
+  padding: 25px;
+  background-color: #f2f2f2;
+}
+
+.heroImg .content {
+  width: 500px;
+  margin: 0 auto;
+}
+
+/* Footer CSS */
+footer {
+  background-color: #373738;
+  padding: 20px;
+  color: #fff;
+}
+
+footer ul {
+  display: inline-block;
+  vertical-align: top;
+  padding: 0;
+  margin: 0;
+}
+
+footer li {
+  padding: 5px;
+  text-align: center;
+}
+
+/* Bonus work */
+.infoSection {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+}
+.infoSection .infoBox {
+  flex-basis: calc(33.33% - 20px);
+  background-color: #f2f2f2;
+  padding: 20px;
+  text-align: center;
+}
+.infoSection .infoBox h3 {
+  color: #333;
+}
+
+.navigation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 100%;
+  background-color: #f2f2f2;
+  z-index: 999;
+}
+
+.navigation ul {
+  list-style: none;
+  display: flex;
+}
+
+.navigation ul li {
+  margin-left: 10px;
+}
+
+.navigation ul li a {
+  text-decoration: none;
+  color: #333;
+  padding: 5px;
+}
+
+.navigation ul li a:hover {
+  background-color: #333;
+  color: #fff;
+}
+
+/* Adjustments for the hero image section */
+.heroImg {
+  margin-top: 60px; /* Adjust this value as needed */
+}
+
+.heroImg .content {
+  text-align: center;
+}
+
+.heroImg img {
+  max-width: 100%;
+}
+
+.heroImg p,
+.heroImg button {
+  margin-top: 20px;
+}
+
+/* About Me section */
+.aboutMe {
+  background-color: #f2f2f2;
+  padding: 40px 0;
+  text-align: center;
+}
+
+.aboutMe h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.aboutMe p {
+  font-size: 16px;
+  line-height: 1.5;
+}
