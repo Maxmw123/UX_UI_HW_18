@@ -103,9 +103,8 @@ footer li {
   color: #fff;
 }
 
-/* Adjustments for the hero image section */
 .heroImg {
-  margin-top: 60px; /* Adjust this value as needed */
+  margin-top: 60px; /
 }
 
 .heroImg .content {
@@ -136,4 +135,65 @@ footer li {
 .aboutMe p {
   font-size: 16px;
   line-height: 1.5;
+}
+
+.flexContainer {
+  display: flex;
+}
+
+.flexContainer > div {
+  width: 33%;
+  margin: 10px;
+  padding: 20px;
+}
+
+.myWork {
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.workGrid {
+  display: grid;
+  grid-template-areas:
+    "project1 project1-details"
+    "project2 project2-details";
+  gap: 20px;
+}
+
+.project1 {
+  grid-area: project1;
+}
+
+.project1-details {
+  grid-area: project1-details;
+}
+
+.project2 {
+  grid-area: project2;
+}
+
+.project2-details {
+  grid-area: project2-details;
+}
+
+@media screen and (max-width: 600px) {
+  .flexContainer {
+    flex-direction: column;
+  }
+  
+  .flexContainer > div {
+    width: 100%;
+  }
+  
+  .workGrid {
+    grid-template-areas:
+      "project1"
+      "project1-details"
+      "project2"
+      "project2-details";
+    grid-template-rows: auto auto auto auto;
+    grid-template-columns: 1fr;
+  }
 }
